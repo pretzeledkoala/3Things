@@ -1,0 +1,12 @@
+{
+    "latex-workshop.latex.outDir": "%DIR%/aux",
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "other": "on",
+            "comments": "on",
+            "strings": "on"
+        }
+    },
+    "markdown.preview.scrollPreviewWithEditor": false
+    
+}

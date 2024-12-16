@@ -1,0 +1,357 @@
+{
+	"[markdown]": {
+		"editor.quickSuggestions": {
+			"other": "on",
+			"comments": "on",
+			"strings": "on"
+		}
+	},
+	// Box
+	"conjecture": {
+		"prefix": "conj",
+		"body": [
+			"<conjecture>",
+			"",
+			"${1}",
+			"",
+			"</conjecture>"
+		],
+		"description": "conjecture"
+	},
+	"construction": {
+		"prefix": "cons",
+		"body": [
+			"<construction>",
+			"",
+			"${1}",
+			"",
+			"</construction>"
+		],
+		"description": "construction"
+	},
+	"corollary": {
+		"prefix": "cor",
+		"body": [
+			"<corollary>",
+			"",
+			"${1}",
+			"",
+			"</corollary>"
+		],
+		"description": "corollary"
+	},
+	"definition": {
+		"prefix": "def",
+		"body": [
+			"<definition>",
+			"",
+			"${1}",
+			"",
+			"</definition>"
+		],
+		"description": "definition"
+	},
+	"example": {
+		"prefix": "ex",
+		"body": [
+			"<example>",
+			"",
+			"${1}",
+			"",
+			"</example>"
+		],
+		"description": "example"
+	},
+	"exercise": {
+		"prefix": "exer",
+		"body": [
+			"<exercise>",
+			"",
+			"${1}",
+			"",
+			"</exercise>"
+		],
+		"description": "exercise"
+	},
+	"lemma": {
+		"prefix": "lem",
+		"body": [
+			"<lemma>",
+			"",
+			"${1}",
+			"",
+			"</lemma>"
+		],
+		"description": "lemma"
+	},
+	"problem": {
+		"prefix": "prob",
+		"body": [
+			"<problem>",
+			"",
+			"${1}",
+			"",
+			"</problem>"
+		],
+		"description": "problem"
+	},
+	"proposition": {
+		"prefix": "prop",
+		"body": [
+			"<proposition>",
+			"",
+			"${1}",
+			"",
+			"</proposition>"
+		],
+		"description": "proposition"
+	},
+	"theorem": {
+		"prefix": "thm",
+		"body": [
+			"<theorem>",
+			"",
+			"${1}",
+			"",
+			"</theorem>"
+		],
+		"description": "theorem"
+	},
+	// Nonbox
+	"remark": {
+		"prefix": "rem",
+		"body": [
+			"<remark>",
+			"",
+			"${1}",
+			"",
+			"</remark>"
+		],
+		"description": "remark"
+	},
+	"proof": {
+		"prefix": "prf",
+		"body": [
+			"<proof>",
+			"",
+			"${1}",
+			"",
+			"</proof>"
+		],
+		"description": "proof"
+	},
+	"solution": {
+		"prefix": "sol",
+		"body": [
+			"<solution>",
+			"",
+			"${1}",
+			"",
+			"</solution>"
+		],
+		"description": "solution"
+	},
+	"source": {
+		"prefix": "src",
+		"body": [
+			"<src>${1}</src>"
+		],
+		"description": "source"
+	},
+	// TeX
+	"dollar": {
+		"prefix": "d",
+		"body": [
+			"$${1}$"
+		],
+		"description": "dollar"
+	},
+	"dollars": {
+		"prefix": "dd",
+		"body": [
+			"$$",
+			"${1}",
+			"$$"
+		],
+		"description": "dollars"
+	},
+	"align": {
+		"prefix": "align",
+		"body": [
+			"$$",
+			"\\begin{align*}",
+			"${1}",
+			"\\end{align*}",
+			"$$"
+		],
+		"description": "align"
+	},
+	// Brackets
+	"parenthesis": {
+		"prefix": "pa",
+		"body": [
+			"\\left(${1}\\right)"
+		],
+		"description": "parenthesis"
+	},
+	"bracket": {
+		"prefix": "bracket",
+		"body": [
+			"\\left[${1}\\right]"
+		],
+		"description": "bracket"
+	},
+	"cbrack": {
+		"prefix": "cbrack",
+		"body": [
+		  "\\left\\{ \\right \\\\}"
+		],
+		"description": "cbrack"
+	  },
+	"pip": {
+		"prefix": "pip",
+		"body": [
+			"\\left|${1}\\right|"
+		],
+		"description": "pip"
+	},
+	"dpip": {
+		"prefix": "dpip",
+		"body": [
+			"\\|${1}\\|"
+		],
+		"description": "dpip"
+	},
+	"langle rangle": {
+		"prefix": "lr",
+		"body": [
+			"\\langle ${1} \\rangle"
+		],
+		"description": "langle rangle"
+	},
+	// Matrices
+	"mat": {
+		"prefix": "mat",
+		"body": [
+			"\\begin{pmatrix}",
+			"${1}",
+			"\\end{pmatrix}",
+			""
+		],
+		"description": "mat"
+	},
+	"brack mat": {
+		"prefix": "bmat",
+		"body": [
+			"\\begin{bmatrix}",
+			"${1}",
+			"\\end{bmatrix}",
+			""
+		],
+		"description": "bmat"
+	},
+	"curly mat": {
+		"prefix": "cmat",
+		"body": [
+			"\\begin{Bmatrix}",
+			"${1}",
+			"\\end{Bmatrix}",
+			""
+		],
+		"description": "curly mat"
+	},
+	"pipmat": {
+		"prefix": "pipmat",
+		"body": [
+			"\\begin{vmatrix}",
+			"${1}",
+			"\\end{vmatrix}",
+			""
+		],
+		"description": "pipmat"
+	},
+	"dpipmat": {
+		"prefix": "dpipmat",
+		"body": [
+			"\\begin{Vmatrix}",
+			"${1}",
+			"\\end{Vmatrix}",
+			""
+		],
+		"description": "dpipmat"
+	},
+	// Fonts
+	"bb": {
+		"prefix": "bb",
+		"body": [
+			"\\mathbb{${1}}"
+		],
+		"description": "bb"
+	},
+	"cal": {
+		"prefix": "cal",
+		"body": [
+			"\\mathcal{${1}}"
+		],
+		"description": "cal"
+	},
+	"frak": {
+		"prefix": "frak",
+		"body": [
+			"\\mathfrak{${1}}"
+		],
+		"description": "frak"
+	},
+	// Fractions
+	"fr": {
+		"prefix": "frac",
+		"body": [
+		  "\\frac{${1}}{}"
+		],
+		"description": "fr"
+	  },
+	"dfr": {
+		"prefix": "dfrac",
+		"body": [
+		  "\\dfrac{${1}}{}"
+		],
+		"description": "dfr"
+	  },
+	//   Text
+	"text": {
+		"prefix": "txt",
+		"body": [
+		  "\\text{${1}}"
+		],
+		"description": "text"
+	  },
+	  "underline": {
+		"prefix": "ul",
+		"body": [
+		  "\\underline{${1}}"
+		],
+		"description": "underline"
+	  },
+	  "overline": {
+		"prefix": "ol",
+		"body": [
+		  "\\overline{${1}}"
+		],
+		"description": "overline"
+	  },
+	  "bold": {
+		"prefix": "bf",
+		"body": [
+		  "\\textbf{${1}}"
+		],
+		"description": "bold"
+	  },
+	  "italic": {
+		"prefix": "it",
+		"body": [
+		  "\\textit{${1}}"
+		],
+		"description": "italic"
+	  }
+
+}

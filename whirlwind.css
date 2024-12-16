@@ -1,0 +1,192 @@
+/* whirlwind.css, made by gary hu */
+
+body {
+  counter-reset: box-section box-subsection box-problem;
+  background-color: white;
+  color: black;
+  white-space: normal;
+  /* Allows wrapping */
+  max-width: 100%;
+  /* Ensures content doesn't exceed container width */
+}
+
+h1 {
+  counter-increment: section;
+  counter-reset: subsection;
+  padding-bottom: -10px;
+  padding-top: 15px;
+}
+
+/* For a narrower input */
+input[type="text"] {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* For a wider textarea */
+textarea {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Boxes */
+
+conjecture,
+construction,
+corollary,
+definition,
+example,
+exercise,
+lemma,
+problem,
+proposition,
+theorem {
+  border: 1px solid #000000;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-image: inherit;
+  counter-increment: section 0;
+  counter-increment: box-subsection;
+  margin-top: 10px;
+  display: block;
+  order: 0;
+}
+
+conjecture::before,
+construction::before,
+corollary::before,
+definition::before,
+definition::before,
+example::before,
+exercise::before,
+lemma::before,
+problem::before,
+proposition::before,
+theorem::before {
+  font-weight: bold;
+  font-style: normal;
+}
+
+conjecture::before {
+  content: "Conjecture " counter(section) "." counter(box-subsection) ". ";
+}
+
+construction::before {
+  content: "Construction " counter(section) "." counter(box-subsection) ". ";
+}
+
+corollary::before {
+  content: "Corollary " counter(section) "." counter(box-subsection) ". ";
+}
+
+definition::before {
+  content: "Definition " counter(section) "." counter(box-subsection) ". ";
+}
+
+exercise::before {
+  content: "Exercise " counter(section) "." counter(box-subsection) ". ";
+}
+
+example::before {
+  content: "Example " counter(section) "." counter(box-subsection) ". ";
+}
+
+lemma::before {
+  content: "Lemma " counter(section) "." counter(box-subsection) ". ";
+}
+
+problem::before {
+  content: "Problem " counter(section) "." counter(box-subsection) ". ";
+}
+
+proposition::before {
+  content: "Proposition " counter(section) "." counter(box-subsection) ". ";
+}
+
+theorem::before {
+  content: "Theorem " counter(section) "." counter(box-subsection) ". ";
+}
+
+/* Others */
+
+remark::before {
+  content: 'Remark. ';
+  font-style: italic;
+}
+
+remark {
+  display: inline-block;
+}
+
+remark p {
+  margin-top: -5px;
+}
+
+src {
+  display: inline-flex;
+}
+
+src::before {
+  content: "(";
+}
+
+src::after {
+  content: ")";
+}
+
+proof::before {
+  content: 'Proof. ';
+  font-style: italic;
+}
+
+proof {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+proof::after {
+  float: right;
+  content: '◾';
+  font-size: 15px;
+}
+
+proof p {
+  display: inline-block;
+}
+
+solution::before {
+  content: 'Solution. ';
+  font-style: italic;
+}
+
+solution {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+solution::after {
+  float: right;
+  content: '◾';
+  font-size: 15px;
+}
+
+solution p {
+  display: inline-block;
+}
+
+source {
+  display: inline-flex;
+}
+
+whirlheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
