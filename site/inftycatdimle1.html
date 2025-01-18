@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inftycatdimle1</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+
+    <!-- Include MathJax with explicit inline math support -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\(","\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    
+    <script type="text/javascript"
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+<link href="../../whirlwind.css" rel="stylesheet"> </head> <body>
+<whirlheader>
+    <p>Eric Zhang</p>
+    <p>Infinity Categories of Dimension Less Than Or Equal To 1</p>
+    <p>January 9, 2025</p>
+</whirlheader>
+<p>Source: JMM 2025</p>
+<h1>Simplicial Set</h1>
+<definition>
+<p>A <strong>simplicial set</strong> $X$ is a functor $\Delta^{\text{op}}\to \text{Sets}$, where $\Delta$ is the category whose objects are linearly ordered and morphisms are non-decreasing maps.</p>
+</definition>
+<h1>Connection to Quivers</h1>
+<p><theorem>
+<src>Lurie, 2018</src></p>
+<p>The category of simplicial sets of $\dim \le 1$ is equivalent to the category of quivers.</p>
+</theorem>
+<h1>Gelfand-Kirillov Dimension</h1>
+<definition>
+<p>The <strong>Gelfand-Kirillov Dimension</strong> of a right module $M$ over a $k$-algebra $A$ is
+$$
+\operatorname{GKdim} = \sup_{V, M_0} \limsup_{n\to\infty} \log_n \dim_k M_0 V^n
+$$</p>
+<p>where the supremum is taken over all finite-dimensional subspaces $V\subset A$ and $M_0\subset M$.</p>
+</definition>
+</body>
+</html>
