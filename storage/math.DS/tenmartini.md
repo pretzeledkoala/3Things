@@ -30,7 +30,7 @@ For all $\lambda \neq 0$, all irrational $a$, and all $\omega$, the spectrum of 
 
 </problem>
 
-# Hopfstadler Butterfly 
+# Hofstader Butterfly 
 
 Hofstadter's butterfly is a graph of the spectral properties of non-interacting two-dimensional electrons in a perpendicular magnetic field in a lattice.
 
